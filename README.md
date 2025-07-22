@@ -12,14 +12,12 @@ A complete end-to-end data project that you can run to extract raw Amazon produc
 4. [ETL Pipeline](#etl-pipeline)  
 5. [Notebooks](#notebooks)  
 6. [Dashboard](#dashboard)  
-7. [Next Steps](#next-steps)  
-8. [License](#license)  
 
 ---
 
 ## 🔍 Project Overview
 
-You’ll work with a raw CSV of 1,465 Amazon product reviews to:
+I’ll work with a raw CSV of 1,465 Amazon product reviews to:
 
 1. **Extract** the data  
 2. **Transform**: clean prices, ratings, and engineer features such as `discount_amount`, `rating_score`, `category_lvl1`, `category_lvl2`, review lengths, etc.  
@@ -74,7 +72,11 @@ In `scripts/transform.py`, I:
 My `scripts/load.py` imports the engineered CSV into a SQLite database at `database/amazon_reviews.db`.
 
 ### 4. Run the Pipeline
-To run the full pipeline, I simply execute: python3 run_pipeline.py
+To run the full pipeline, I simply execute: 
+
+```bash
+python3 run_pipeline.py
+
 
 
 ## 📓 Notebooks
